@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sixteam.pro — Historia 9:16 · Radar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800;900&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#11141c; min-height:100vh; display:flex; flex-direction:column; align-items:center; padding:34px 16px 60px; font-family:'Lato',sans-serif; }
+  .page-title { color:#e0e0e0; font-family:'Poppins',sans-serif; font-weight:700; font-size:16px; margin-bottom:4px; }
+  .page-sub { color:rgba(255,255,255,.4); font-size:12px; margin-bottom:22px; }
+  .serif { font-family:'Poppins',sans-serif; } .sans { font-family:'Lato',sans-serif; }
+  .story { width:360px; aspect-ratio:9/16; border-radius:18px; overflow:hidden; position:relative; display:flex; flex-direction:column; justify-content:center; padding:44px 36px; background:linear-gradient(165deg,#0a2342 0%,#1d70a2 55%,#00bfa5 125%); box-shadow:0 20px 60px rgba(0,0,0,.5); }
+  .serif-h { font-family:'Poppins',sans-serif; font-weight:800; letter-spacing:-.5px; }
+  .topbar { position:absolute; top:16px; left:16px; right:16px; height:3px; background:rgba(255,255,255,.3); border-radius:2px; overflow:hidden; }
+  .topbar > div { height:100%; width:40%; background:#fff; }
+  .logo-row { position:absolute; top:30px; left:36px; display:flex; align-items:center; gap:9px; }
+  .sq { width:30px; height:30px; border-radius:8px; background:rgba(255,255,255,.18); display:flex; align-items:center; justify-content:center; }
+  .swipe { position:absolute; bottom:38px; left:0; right:0; display:flex; flex-direction:column; align-items:center; gap:8px; }
+  .swipe-pill { background:#fff; color:#0a2342; font-family:'Poppins',sans-serif; font-weight:700; font-size:13px; padding:12px 26px; border-radius:30px; }
+  .dl-btn { background:#00bfa5; color:#002b26; font-family:'Poppins',sans-serif; font-weight:700; font-size:12px; padding:9px 22px; border-radius:22px; cursor:pointer; border:none; margin-top:20px; }
+  .dl-btn:hover { opacity:.85; }
+</style>
+</head>
+<body>
+  <div class="page-title serif">Historia Instagram 9:16 — Radar</div>
+  <div class="page-sub sans">1080×1920 · pieza única para stories</div>
+
+  <div class="story" id="slide-0">
+    <div class="topbar"><div></div></div>
+    <div class="logo-row"><div class="sq"><span class="serif" style="font-weight:900;font-size:11px;color:#fff;">S6</span></div><span class="serif" style="font-weight:700;font-size:13px;color:#fff;">Sixteam.pro</span></div>
+    <div>
+      <span class="sans" style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:2.8px;text-transform:uppercase;color:rgba(255,255,255,.8);">Radar · Gratis</span>
+      <h1 class="serif-h" style="color:#fff;font-size:44px;line-height:1.05;margin-top:14px;">¿Dónde se te está yendo el dinero?</h1>
+      <p class="sans" style="color:rgba(255,255,255,.85);font-size:17px;line-height:1.5;margin-top:18px;">Te lo decimos en 48 horas. Sin propuesta de 30 páginas. Sin compromiso.</p>
+    </div>
+    <div class="swipe">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="swipe-pill">Desliza arriba → Pide tu Radar</div>
+      <span class="sans" style="font-size:11px;color:rgba(255,255,255,.6);margin-top:2px;">@sixteam.pro</span>
+    </div>
+  </div>
+
+  <button class="dl-btn" onclick="dl()">⬇ Descargar historia</button>
+<script>
+  async function dl(){ const s=document.getElementById('slide-0'); const cv=await html2canvas(s,{scale:3,useCORS:true,allowTaint:true,width:360,height:s.offsetHeight,backgroundColor:null,logging:false}); const a=document.createElement('a'); a.download='sixteam_historia_radar.png'; a.href=cv.toDataURL('image/png'); a.click(); }
+</script>
+</body>
+</html>

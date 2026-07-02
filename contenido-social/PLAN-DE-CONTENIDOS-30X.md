@@ -724,18 +724,18 @@ Sobran L3, L4, L6, L8, E3, E4, N3 → banco de contenido para la semana 5 y refu
 
 | Archivo | Contiene |
 |---------|----------|
-| `sixteam-studio/pautas/pautas-pack.html` | A1–A6 (6 ads, descargables individualmente) |
-| `sixteam-studio/instagram/ig-singles-pack.html` | I2, I4, I6, I8 (4 posts de una pieza) + I9 (historia) |
-| `sixteam-studio/instagram/ig-carrusel-senales.html` | I1 (carrusel 7 slides) |
-| `sixteam-studio/instagram/ig-carrusel-como-trabajamos.html` | I3 |
-| `sixteam-studio/instagram/ig-carrusel-agentes-ia.html` | I5 |
-| `sixteam-studio/instagram/ig-carrusel-caso-travel.html` | I7 |
-| `sixteam-studio/linkedin/li-singles-pack.html` | L2, L4, L6, L8 (4 posts de una pieza) |
-| `sixteam-studio/linkedin/li-carrusel-oficio.html` | L1 |
-| `sixteam-studio/linkedin/li-carrusel-caso.html` | L3 |
-| `sixteam-studio/linkedin/li-carrusel-ia-cada-semana.html` | L5 |
-| `sixteam-studio/linkedin/li-carrusel-equipo-revops.html` | L7 |
-| `sixteam-studio/email/email-banners-pack.html` | E1–E4 (4 banners header) |
-| `sixteam-studio/newsletter/newsletter-heros-pack.html` | N1–N3 (3 hero banners) |
+| `contenido-social/pautas/pautas-pack.html` | A1–A6 (6 ads, descargables individualmente) |
+| `contenido-social/instagram/ig-singles-pack.html` | I2, I4, I6, I8 (4 posts de una pieza) + I9 (historia) |
+| `contenido-social/instagram/ig-carrusel-senales.html` | I1 (carrusel 7 slides) |
+| `contenido-social/instagram/ig-carrusel-como-trabajamos.html` | I3 |
+| `contenido-social/instagram/ig-carrusel-agentes-ia.html` | I5 |
+| `contenido-social/instagram/ig-carrusel-caso-travel.html` | I7 |
+| `contenido-social/linkedin/li-singles-pack.html` | L2, L4, L6, L8 (4 posts de una pieza) |
+| `contenido-social/linkedin/li-carrusel-oficio.html` | L1 |
+| `contenido-social/linkedin/li-carrusel-caso.html` | L3 |
+| `contenido-social/linkedin/li-carrusel-ia-cada-semana.html` | L5 |
+| `contenido-social/linkedin/li-carrusel-equipo-revops.html` | L7 |
+| `contenido-social/email/email-banners-pack.html` | E1–E4 (4 banners header) |
+| `contenido-social/newsletter/newsletter-heros-pack.html` | N1–N3 (3 hero banners) |
 
 *Plan generado: Junio 2026 · Sixteam.pro · Rama v2*

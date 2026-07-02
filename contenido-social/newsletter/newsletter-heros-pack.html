@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sixteam.pro — Heros de newsletter (N1–N3)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800;900&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#11141c; min-height:100vh; display:flex; flex-direction:column; align-items:center; padding:34px 16px 60px; font-family:'Lato',sans-serif; }
+  .page-title { color:#e0e0e0; font-family:'Poppins',sans-serif; font-weight:700; font-size:16px; margin-bottom:4px; }
+  .page-sub { color:rgba(255,255,255,.4); font-size:12px; margin-bottom:22px; text-align:center; }
+  .serif { font-family:'Poppins',sans-serif; } .sans { font-family:'Lato',sans-serif; }
+  .stack { display:flex; flex-direction:column; gap:20px; align-items:center; }
+  .hero { width:600px; aspect-ratio:1.91/1; overflow:hidden; position:relative; border-radius:14px; display:flex; flex-direction:column; justify-content:center; padding:34px 42px; box-shadow:0 16px 44px rgba(0,0,0,.45); }
+  .eyebrow { display:inline-block; font-size:10px; font-weight:700; letter-spacing:2.8px; text-transform:uppercase; }
+  .headline { font-family:'Poppins',sans-serif; font-weight:800; letter-spacing:-.5px; }
+  .logo-mini { position:absolute; top:20px; left:42px; display:flex; align-items:center; gap:8px; }
+  .sq { width:28px; height:28px; border-radius:7px; background:linear-gradient(135deg,#1d70a2,#00bfa5); display:flex; align-items:center; justify-content:center; }
+  .tag-foot { position:absolute; bottom:20px; left:42px; }
+  .dl-btn { background:#00bfa5; color:#002b26; font-family:'Poppins',sans-serif; font-weight:700; font-size:11px; padding:6px 14px; border-radius:20px; cursor:pointer; border:none; margin-top:8px; }
+  .dl-btn:hover { opacity:.85; }
+  .dl-all { background:rgba(0,191,165,.15); border:1px solid #00bfa5; color:#00bfa5; font-family:'Poppins',sans-serif; font-weight:700; font-size:12px; padding:9px 22px; border-radius:22px; cursor:pointer; }
+</style>
+</head>
+<body>
+  <div class="page-title serif">Heros de newsletter (N1–N3)</div>
+  <div class="page-sub sans">Banner 1.91:1 (1200×628) para el tope de cada edición</div>
+  <button class="dl-all" onclick="dlAll()">⬇ Descargar los 3 heros</button>
+  <div style="height:18px;"></div>
+
+  <div class="stack">
+
+    <!-- N1 — IA + indecisión (gradient) -->
+    <div style="display:flex;flex-direction:column;align-items:flex-start;">
+      <div class="hero" id="slide-0" style="background:linear-gradient(125deg,#0a2342 0%,#1d70a2 58%,#00bfa5 125%);">
+        <div class="logo-mini"><div class="sq" style="background:rgba(255,255,255,.18);"><span class="serif" style="font-weight:900;font-size:11px;color:#fff;">S6</span></div><span class="serif" style="font-weight:700;font-size:12px;color:#fff;">Sixteam.pro · Newsletter</span></div>
+        <span class="eyebrow" style="color:rgba(255,255,255,.8);">Edición · IA + Humano</span>
+        <h2 class="headline" style="color:#fff;font-size:34px;line-height:1.08;margin-top:10px;max-width:480px;">La IA no te va a reemplazar.<br><span style="border-bottom:3px solid rgba(255,255,255,.55);">La indecisión sí.</span></h2>
+        <div class="tag-foot"><span class="sans" style="font-size:11px;color:rgba(255,255,255,.7);">Velocidad de máquina. Criterio humano.</span></div>
+      </div>
+      <button class="dl-btn" onclick="dl(0)">Descargar N1</button>
+    </div>
+
+    <!-- N2 — CRM abandonado (navy) -->
+    <div style="display:flex;flex-direction:column;align-items:flex-start;">
+      <div class="hero" id="slide-1" style="background:#0a2342;">
+        <div class="logo-mini"><div class="sq"><span class="serif" style="font-weight:900;font-size:11px;color:#fff;">S6</span></div><span class="serif" style="font-weight:700;font-size:12px;color:#fff;">Sixteam.pro · Newsletter</span></div>
+        <span class="eyebrow" style="color:#33cbb6;">Edición · CRM</span>
+        <h2 class="headline" style="color:#fff;font-size:34px;line-height:1.08;margin-top:10px;">Tu CRM no está muerto.<br><span style="color:#00bfa5;">Está abandonado.</span></h2>
+        <div class="tag-foot"><span class="sans" style="font-size:11px;color:rgba(255,255,255,.55);">La herramienta no era el problema. Era quién la opera.</span></div>
+      </div>
+      <button class="dl-btn" onclick="dl(1)">Descargar N2</button>
+    </div>
+
+    <!-- N3 — aprendizajes (light) -->
+    <div style="display:flex;flex-direction:column;align-items:flex-start;">
+      <div class="hero" id="slide-2" style="background:#eef3f8;">
+        <div class="logo-mini"><div class="sq"><span class="serif" style="font-weight:900;font-size:11px;color:#fff;">S6</span></div><span class="serif" style="font-weight:700;font-size:12px;color:#0a2342;">Sixteam.pro · Newsletter</span></div>
+        <span class="eyebrow" style="color:#007a6a;">Edición · Lecciones</span>
+        <h2 class="headline" style="color:#0a2342;font-size:33px;line-height:1.08;margin-top:10px;max-width:490px;">3 cosas que aprendimos <span style="color:#1d70a2;">operando, no opinando.</span></h2>
+        <div class="tag-foot"><span class="sans" style="font-size:11px;color:#8794a1;">Sin teoría. Esto lo aprendimos metiendo las manos.</span></div>
+      </div>
+      <button class="dl-btn" onclick="dl(2)">Descargar N3</button>
+    </div>
+
+  </div>
+<script>
+  const TOTAL=3; const labels=['N1','N2','N3'];
+  async function dl(i){ const s=document.getElementById('slide-'+i); const cv=await html2canvas(s,{scale:3,useCORS:true,allowTaint:true,width:600,height:s.offsetHeight,backgroundColor:null,logging:false}); const a=document.createElement('a'); a.download='sixteam_'+labels[i]+'_hero.png'; a.href=cv.toDataURL('image/png'); a.click(); }
+  async function dlAll(){ for(let i=0;i<TOTAL;i++){await dl(i);await new Promise(r=>setTimeout(r,600));} }
+</script>
+</body>
+</html>
