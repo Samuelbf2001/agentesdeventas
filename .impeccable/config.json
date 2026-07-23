@@ -1,0 +1,97 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [
+      "contenido-social/carruseles/ia-agencia-de-viajes.html"
+    ],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "lato",
+        "createdAt": "2026-07-22T23:26:23.037Z",
+        "reason": "Lato es la fuente de body oficial y obligatoria de Sixteam.pro, documentada en CLAUDE.md, DESIGN.md y PRODUCT.md (regla: nunca Inter/Roboto). No es un default elegido por mi, es un brand commitment preexistente del proyecto."
+      },
+      {
+        "rule": "overused-font",
+        "value": "*",
+        "files": [
+          "contenido-social/pautas/pauta-consultoria-vip.html"
+        ],
+        "createdAt": "2026-07-22T23:28:06.429Z",
+        "reason": "Lato/Poppins es la tipografia de marca obligatoria de Sixteam.pro (CLAUDE.md/DESIGN.md); el link de Google Fonts que la carga no es un default generico."
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "22px",
+        "createdAt": "2026-07-22T23:31:59.121Z",
+        "reason": "Usuario confirmo (2026-07-22): pieza de Meta Ads a resolucion final nativa 1080x1440, escala tipografica documentada como convencion en DESIGN.md (seccion 'Piezas estaticas de una sola imagen'), proporcional 2.7x al mockup de 400px."
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "23px",
+        "createdAt": "2026-07-22T23:31:59.219Z",
+        "reason": "Usuario confirmo (2026-07-22): pieza de Meta Ads a resolucion final nativa 1080x1440, escala tipografica documentada como convencion en DESIGN.md (seccion 'Piezas estaticas de una sola imagen'), proporcional 2.7x al mockup de 400px."
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "14px",
+        "createdAt": "2026-07-22T23:31:59.305Z",
+        "reason": "Usuario confirmo (2026-07-22): pieza de Meta Ads a resolucion final nativa 1080x1440, escala tipografica documentada como convencion en DESIGN.md (seccion 'Piezas estaticas de una sola imagen'), proporcional 2.7x al mockup de 400px."
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "74px",
+        "createdAt": "2026-07-22T23:31:59.385Z",
+        "reason": "Usuario confirmo (2026-07-22): pieza de Meta Ads a resolucion final nativa 1080x1440, escala tipografica documentada como convencion en DESIGN.md (seccion 'Piezas estaticas de una sola imagen'), proporcional 2.7x al mockup de 400px."
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "33px",
+        "createdAt": "2026-07-22T23:31:59.466Z",
+        "reason": "Usuario confirmo (2026-07-22): pieza de Meta Ads a resolucion final nativa 1080x1440, escala tipografica documentada como convencion en DESIGN.md (seccion 'Piezas estaticas de una sola imagen'), proporcional 2.7x al mockup de 400px."
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "15px",
+        "createdAt": "2026-07-22T23:31:59.548Z",
+        "reason": "Usuario confirmo (2026-07-22): pieza de Meta Ads a resolucion final nativa 1080x1440, escala tipografica documentada como convencion en DESIGN.md (seccion 'Piezas estaticas de una sola imagen'), proporcional 2.7x al mockup de 400px."
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "50px",
+        "createdAt": "2026-07-22T23:31:59.619Z",
+        "reason": "Usuario confirmo (2026-07-22): pieza de Meta Ads a resolucion final nativa 1080x1440, escala tipografica documentada como convencion en DESIGN.md (seccion 'Piezas estaticas de una sola imagen'), proporcional 2.7x al mockup de 400px."
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "29px",
+        "createdAt": "2026-07-22T23:31:59.703Z",
+        "reason": "Usuario confirmo (2026-07-22): pieza de Meta Ads a resolucion final nativa 1080x1440, escala tipografica documentada como convencion en DESIGN.md (seccion 'Piezas estaticas de una sola imagen'), proporcional 2.7x al mockup de 400px."
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "26px",
+        "createdAt": "2026-07-22T23:31:59.798Z",
+        "reason": "Usuario confirmo (2026-07-22): pieza de Meta Ads a resolucion final nativa 1080x1440, escala tipografica documentada como convencion en DESIGN.md (seccion 'Piezas estaticas de una sola imagen'), proporcional 2.7x al mockup de 400px."
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "20px",
+        "createdAt": "2026-07-22T23:31:59.873Z",
+        "reason": "Usuario confirmo (2026-07-22): pieza de Meta Ads a resolucion final nativa 1080x1440, escala tipografica documentada como convencion en DESIGN.md (seccion 'Piezas estaticas de una sola imagen'), proporcional 2.7x al mockup de 400px."
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgba(255,138,92,.30)",
+        "createdAt": "2026-07-22T23:45:49.560Z",
+        "reason": "Usuario confirmo explicitamente en este turno: pidio agregar recursos visuales llamativos 'sin importar los colores', autorizando un acento calido (coral) fuera de la paleta original solo para glows atmosfericos decorativos."
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgba(255,138,92,.15)",
+        "createdAt": "2026-07-22T23:45:49.642Z",
+        "reason": "Mismo caso que rgba(255,138,92,.30): acento calido decorativo autorizado explicitamente por el usuario en este turno."
+      }
+    ]
+  }
+}

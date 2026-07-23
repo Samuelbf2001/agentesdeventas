@@ -25,7 +25,9 @@ contenido-social/
 ├── email/              ← Banners para email marketing
 ├── pautas/             ← Piezas para Meta Ads / pauta paga
 ├── newsletter/         ← Templates de newsletter
-├── videos/             ← Scripts y storyboards de reels
+├── videos/
+│   ├── remotion/        ← Proyecto Remotion compartido (una composición por reel, ver Root.tsx)
+│   └── <slug-reel>/     ← script.md + storyboard.md por reel (ver reel-10s-operaciones/)
 └── PLAN-DE-CONTENIDOS-30X.md  ← Calendario y plan 30 piezas
 ```
 
@@ -33,7 +35,18 @@ contenido-social/
 
 1. **Tema + ángulo** → skill `sixteam-comercial` (global) para el ángulo de venta
 2. **Copy** → skill `sixteam-marketing-content` (global) para caption y textos
-3. **Visual** → según formato:
+3. **Visual** → antes de construir cualquier pieza visual (post, carrusel, story, banner), cargar
+   en este orden:
+   1. `impeccable` — lee `PRODUCT.md` y `DESIGN.md` (raíz del repo); es la autoridad de marca y
+      proceso.
+   2. `frontend-design` — dirección estética deliberada para esta pieza específica.
+   3. `ui-typography` — aplica en automático las reglas tipográficas finas.
+   4. `graphic-resources` — opciones de tipografía, bancos de íconos/ilustraciones/fondos y
+      criterios de composición.
+   5. `design-motion-principles` — solo si la pieza tiene animación (reel, story animada,
+      transición de carrusel en video).
+
+   Luego, según formato:
    - Carrusel / historia → skill `instagram-carousel` → genera HTML autocontenido
    - Reel / video → skill `sixteam-video-director` → guión + storyboard + Remotion
 4. **Guardar** en la subcarpeta del canal correspondiente dentro de `contenido-social/`
