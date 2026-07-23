@@ -1,0 +1,15 @@
+node_modules
+dist
+.DS_Store
+.env
+
+# Installed via `npx remotion skills add` — regeneratable, and the symlinks it creates
+# use machine-absolute paths that don't survive a clone. Re-run that command after cloning.
+.agents
+.agent
+.codex
+.gemini
+.claude/skills
+
+# Ignore the output video from Git but not videos you import into src/.
+out
