@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-22T00:00:00Z",
+  "title": "Design System: Sixteam.pro — Contenido Social",
+  "extensions": {
+    "colorMeta": {
+      "teal": { "role": "primary", "displayName": "Sixteam Teal", "canonical": "#00bfa5", "tonalRamp": ["#002b26", "#00473e", "#006557", "#007a6a", "#00966f", "#00bfa5", "#4fd6c1", "#a6ebdf"] },
+      "blue": { "role": "secondary", "displayName": "Sixteam Blue", "canonical": "#1d70a2", "tonalRamp": ["#071c29", "#0e3450", "#154d78", "#1d70a2", "#3690c4", "#63aed9", "#9ccbea", "#d3e8f5"] },
+      "navy": { "role": "neutral", "displayName": "Navy", "canonical": "#0a2342", "tonalRamp": ["#050f1c", "#0a2342", "#0f3363", "#164784", "#245ea6", "#4a7fc0", "#84a9d8", "#c3d8ee"] },
+      "ink-black": { "role": "neutral", "displayName": "Ink Black", "canonical": "#0d0d12", "tonalRamp": ["#050506", "#0d0d12", "#16161d", "#212129", "#2f2f39", "#45454f", "#65656f", "#9a9aa2"] },
+      "card-light": { "role": "neutral", "displayName": "Card Light", "canonical": "#eef3f8", "tonalRamp": ["#5b6b78", "#82919c", "#a6b3bc", "#c4cfd6", "#dbe4e9", "#eef3f8", "#f5f8fb", "#fbfcfd"] },
+      "gray": { "role": "neutral", "displayName": "Body Gray", "canonical": "#e0e0e0", "tonalRamp": ["#3a3a3a", "#565656", "#727272", "#8f8f8f", "#acacac", "#c6c6c6", "#e0e0e0", "#f2f2f2"] }
+    },
+    "typographyMeta": {
+      "headline": { "displayName": "Headline", "purpose": "Hooks y titulares de slide, siempre Poppins." },
+      "eyebrow": { "displayName": "Eyebrow", "purpose": "Kicker uppercase sobre el headline." },
+      "body": { "displayName": "Body", "purpose": "Cuerpo, captions y microcopy, siempre Lato." },
+      "number-display": { "displayName": "Número ancla", "purpose": "Cifra protagonista de un slide de dato." }
+    },
+    "shadows": [
+      { "name": "frame-shadow", "value": "0 20px 60px rgba(0,0,0,.5)", "purpose": "Única sombra del sistema: separa el marco de teléfono completo de su entorno." }
+    ],
+    "motion": [
+      { "name": "dot-transition", "value": "0.2s ease", "purpose": "Transición de los puntos de paginación del carrusel." }
+    ],
+    "breakpoints": []
+  },
+  "components": [
+    {
+      "name": "CTA Pill",
+      "kind": "button",
+      "refersTo": "cta-pill",
+      "description": "Botón/pill de acción única, siempre en teal con texto teal-ink.",
+      "html": "<button class=\"ds-cta-pill\">Agendar 20 min</button>",
+      "css": ".ds-cta-pill { background:#00bfa5; color:#002b26; font-family:'Poppins',sans-serif; font-weight:700; font-size:11px; padding:6px 12px; border-radius:20px; border:none; cursor:pointer; transition:transform 0.2s, box-shadow 0.2s; } .ds-cta-pill:hover { transform:translateY(-1px); } .ds-cta-pill:focus-visible { outline:2px solid #ffffff; outline-offset:2px; }"
+    },
+    {
+      "name": "Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Chip de dato o etiqueta sobre fondo oscuro.",
+      "html": "<span class=\"ds-chip\">Lead → contacto → reunión</span>",
+      "css": ".ds-chip { display:inline-flex; align-items:center; gap:6px; font-family:'Lato',sans-serif; font-weight:500; font-size:12.5px; letter-spacing:.1px; padding:9px 13px; border-radius:9px; background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.22); color:#ffffff; }"
+    },
+    {
+      "name": "Phone Frame",
+      "kind": "card",
+      "refersTo": "frame",
+      "description": "Marco de mockup de Instagram que contiene cada pieza; única superficie con sombra del sistema.",
+      "html": "<div class=\"ds-ig-frame\"><!-- contenido de la pieza --></div>",
+      "css": ".ds-ig-frame { width:400px; background:#0d0d12; border-radius:18px; overflow:hidden; box-shadow:0 20px 60px rgba(0,0,0,.5); }"
+    },
+    {
+      "name": "Story Progress Bar",
+      "kind": "custom",
+      "refersTo": "progress",
+      "description": "Barra de progreso de story en la parte superior del marco.",
+      "html": "<div class=\"ds-progress-track\"><div class=\"ds-progress-fill\" style=\"width:37.5%\"></div></div>",
+      "css": ".ds-progress-track { flex:1; height:3px; background:rgba(255,255,255,.12); border-radius:2px; overflow:hidden; } .ds-progress-fill { height:100%; background:#00bfa5; border-radius:2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "El operador silencioso",
+    "overview": "Sixteam vende operación continua, no espectáculo puntual — el sistema visual sigue el mismo principio: fondo navy/negro que ancla cada pieza, teal usado con disciplina como la única señal de acción, y tipografía que separa con claridad la voz editorial (Poppins) de la voz de trabajo (Lato). Formato mobile-first estricto: todo se diseña primero como mockup de feed/story de Instagram. Dark-first: el fondo oscuro es el estado por defecto, no una variante.",
+    "keyCharacteristics": [
+      "Dark-first, mobile-first — se diseña como mockup de story/feed de IG.",
+      "Teal (#00bfa5) es el único color de acción; nunca decorativo.",
+      "Números grandes (54px, peso 300) como protagonistas de un dato ancla.",
+      "Jerarquía tipográfica estricta: Poppins = titulares; Lato = todo lo demás.",
+      "Nunca Inter/Roboto/system-default."
+    ],
+    "rules": [
+      { "name": "The Scarcity Rule", "body": "El teal puro nunca cubre más del 10% de la superficie de un slide.", "section": "colors" },
+      { "name": "The Flat-Interior Rule", "body": "Ningún elemento dentro del marco de teléfono proyecta sombra propia; solo el marco exterior tiene profundidad.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do usar Poppins para titulares y Lato para todo lo demás, sin mezclar.",
+      "Do mantener el teal por debajo del 10% de superficie visible por slide.",
+      "Do construir cada pieza dentro del marco de mockup de teléfono.",
+      "Do insertar el logo como imagen real embebida (base64 o asset local), nunca como texto placeholder."
+    ],
+    "donts": [
+      "Don't usar Inter, Roboto, Arial o fuentes de sistema.",
+      "Don't usar el teal como fondo de bloques grandes.",
+      "Don't dejar un fallback de texto tipo iniciales (\"S6\") como respaldo del logo."
+    ]
+  }
+}
